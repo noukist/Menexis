@@ -80,12 +80,12 @@ h1 em{font-style:italic;color:var(--accent)}
 .btn-g::after{content:'→';transition:transform .2s}
 .btn-g:hover{color:#fff}
 .btn-g:hover::after{transform:translateX(4px)}
-.hero-stats{position:absolute;top:52%;right:clamp(1rem,4vw,4rem);left:auto;bottom:auto;transform:translateY(-50%);z-index:2;display:flex;flex-direction:column;border-top:none}
-.hstat{text-align:center;padding:clamp(.8rem,2vh,1.6rem) clamp(1rem,2.2vw,2.2rem);border-left:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
-.hstat:last-child{border-right:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
-.hstat-n{font-family:var(--serif);font-size:clamp(2.1rem,3.2vw,3.3rem);font-weight:300;color:#fff;line-height:1}
+.hero-stats{position:absolute;bottom:clamp(1rem,3vh,2.5rem);left:clamp(1rem,4vw,4rem);right:auto;top:auto;transform:none;z-index:2;display:flex;gap:.9rem;border-top:none}
+.hstat{text-align:center;padding:clamp(1rem,2.2vh,1.8rem) clamp(1.1rem,2.3vw,2.3rem);background:rgba(123,111,232,.16);border:1px solid rgba(123,111,232,.45);box-shadow:0 8px 24px rgba(13,11,56,.22)}
+.hstat:last-child{border:1px solid rgba(123,111,232,.45)}
+.hstat-n{font-family:var(--serif);font-size:clamp(2.4rem,3.8vw,3.8rem);font-weight:300;color:#fff;line-height:1}
 .hstat-n sup{font-size:60%;color:var(--accent);vertical-align:super}
-.hstat-l{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.36);margin-top:.45rem}
+.hstat-l{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:.55rem}
 
 /* ===== MARQUEE ===== */
 .mq-wrap{background:var(--navy);padding:.85rem 0;overflow:hidden}
@@ -322,7 +322,7 @@ footer{background:var(--navy-deep);padding:clamp(0.5rem,1vw,1rem) clamp(0.5rem,1
   .nav-links{display:none}
   .hamburger{display:flex}
   h1{font-size:clamp(2rem,7vw,3rem)}
-  .hero-stats{position:relative;top:auto;right:auto;left:auto;bottom:auto;transform:none;margin-top:2rem;flex-direction:row;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.1)}
+  .hero-stats{position:relative;top:auto;right:auto;left:auto;bottom:auto;transform:none;margin-top:2rem;gap:.6rem;flex-direction:row;flex-wrap:wrap;border-top:none}
   #hero{padding-bottom:2rem}
   .hero-content{padding:0 1rem}
   .pg{grid-template-columns:1fr;grid-template-rows:auto}
