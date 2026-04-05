@@ -39,8 +39,8 @@ button{cursor:pointer;border:none;background:none;font-family:var(--sans)}
 }
 #nav.scrolled{background:rgba(13,11,56,.97);backdrop-filter:blur(12px);padding:.8rem clamp(1rem,4vw,4rem)}
 .nav-logo{display:flex;align-items:center}
-.nav-logo img{height:100px;transition:height .25s ease}
-#nav.scrolled .nav-logo img{height:84px}
+.nav-logo img{height:55px;width:auto;transition:height .3s ease}
+#nav.scrolled .nav-logo img{height:42px}
 .nav-links{display:flex;gap:clamp(1rem,2.5vw,2.5rem);align-items:center}
 .nav-links a{color:rgba(255,255,255,.75);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;transition:color .2s;white-space:nowrap}
 .nav-links a:hover,.nav-links a.active-link{color:#fff}
@@ -96,7 +96,7 @@ h1 em{font-style:italic;color:var(--accent)}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* ===== SECTION UTILITIES ===== */
-.sec-pad{padding:clamp(1rem,2vw,2rem) clamp(0.5rem,1vw,1rem)}
+.sec-pad{padding:clamp(2rem,5vw,3.5rem) clamp(1rem,4vw,4rem)}
 .sec-eye{font-size:.63rem;letter-spacing:.28em;text-transform:uppercase;color:var(--indigo);margin-bottom:.9rem;display:flex;align-items:center;gap:.8rem}
 .sec-eye::before{content:'';display:block;width:2rem;height:2px;background:var(--indigo);flex-shrink:0}
 .sec-eye.light{color:var(--accent)}
