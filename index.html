@@ -1225,7 +1225,7 @@ function buildTestimonials() {
   if(dotsEl) dotsEl.innerHTML = data.map((_,i) => `<button class="tdot ${i===0?'on':''}" onclick="goT(${i})"></button>`).join('');
   currentT = 0;
   clearInterval(tTimer);
-  tTimer = setInterval(()=>moveT(1), 8000);
+  tTimer = setInterval(()=>moveT(1), 7000);
 }
 
 function goT(n) {
