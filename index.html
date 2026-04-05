@@ -38,7 +38,7 @@ button{cursor:pointer;border:none;background:none;font-family:var(--sans)}
   transition:background .4s,padding .4s;
 }
 #nav.scrolled{background:rgba(13,11,56,.97);backdrop-filter:blur(12px);padding:.8rem clamp(1rem,4vw,4rem)}
-.nav-logo{display:flex;align-items:center}
+.nav-logo{display:flex;align-items:center;margin-right:auto}
 .nav-logo img{height:150px;width:auto;transition:height .3s ease}
 #nav.scrolled .nav-logo img{height:120px}
 .nav-links{display:flex;gap:clamp(1rem,2.5vw,2.5rem);align-items:center}
@@ -320,6 +320,7 @@ footer{background:var(--navy-deep);padding:clamp(0.5rem,1vw,1rem) clamp(0.5rem,1
   .proj-list{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:768px){
+  .nav-logo img{height:100px}
   .nav-links{display:none}
   .hamburger{display:flex}
   h1{font-size:clamp(2rem,7vw,3rem)}
